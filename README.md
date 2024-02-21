@@ -1,7 +1,17 @@
+⚠️⚠️ <span style="font-size:larger;"> **Notes** </span> ⚠️⚠️
+
+* ***This api contain only basic user token authantication (without any token management), for production purpose can use https://github.com/iMerica/dj-rest-auth**.*
+* ***change .env_example to .env and edit with your own data***
+```bash
+python3 -m venv env && source env/bin/activate && pip install -r requirements.txt && python3 manage.py makemigrations && python3 manage.py migrate
+python3 runserver 0.0.0.0:8000
+```
+
+
 # 📬 MESSAGES REST API
 
 ## 📖 Overview
-The Message API provides functionality for creating, updating, and deleting messages. It also provides endpoints for retrieving messages related to the authenticated user.
+The Message API provides functionality for creating, updating, and deleting messages. It also provides endpoints for retrieving messages related to the authenticated user and basic user token authantication API.
 
 ## 📝 Fields
 
